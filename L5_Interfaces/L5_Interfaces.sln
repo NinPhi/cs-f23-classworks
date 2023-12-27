@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LP3_ExceptionHandling", "LP3_ExceptionHandling\LP3_ExceptionHandling.csproj", "{01CB6E15-A10A-4DC6-833D-8314104E2083}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L5_Interfaces", "L5_Interfaces\L5_Interfaces.csproj", "{B9014705-1DA3-41D4-B2AD-6873F0847EC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01CB6E15-A10A-4DC6-833D-8314104E2083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01CB6E15-A10A-4DC6-833D-8314104E2083}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01CB6E15-A10A-4DC6-833D-8314104E2083}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01CB6E15-A10A-4DC6-833D-8314104E2083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9014705-1DA3-41D4-B2AD-6873F0847EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9014705-1DA3-41D4-B2AD-6873F0847EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9014705-1DA3-41D4-B2AD-6873F0847EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9014705-1DA3-41D4-B2AD-6873F0847EC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C3364505-59DD-4676-B915-FC3D9A7CF930}
+		SolutionGuid = {34911C1E-C9E6-48AC-B16A-08CC2B50FD33}
 	EndGlobalSection
 EndGlobal
