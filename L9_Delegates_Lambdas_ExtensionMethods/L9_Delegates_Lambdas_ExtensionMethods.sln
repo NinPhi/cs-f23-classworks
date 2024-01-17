@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L9_Delegates_Lambdas_ExtensionMethods", "L9_Delegates_Lambdas_ExtensionMethods\L9_Delegates_Lambdas_ExtensionMethods.csproj", "{D432F613-0C94-43F7-9587-00D7CA1EF16B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D432F613-0C94-43F7-9587-00D7CA1EF16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D432F613-0C94-43F7-9587-00D7CA1EF16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D432F613-0C94-43F7-9587-00D7CA1EF16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D432F613-0C94-43F7-9587-00D7CA1EF16B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4593F1BD-30B5-4556-8513-5BE4207B4209}
+	EndGlobalSection
+EndGlobal
