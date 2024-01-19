@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LP9_Lambdas_ExtensionMethods", "LP9_Lambdas_ExtensionMethods\LP9_Lambdas_ExtensionMethods.csproj", "{F61527D9-93D7-4B83-9389-2F05BA79584D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L10P_LINQ", "L10P_LINQ\L10P_LINQ.csproj", "{A1B2E780-D969-4563-AE81-DBA6EFF7AFCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F61527D9-93D7-4B83-9389-2F05BA79584D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F61527D9-93D7-4B83-9389-2F05BA79584D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F61527D9-93D7-4B83-9389-2F05BA79584D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F61527D9-93D7-4B83-9389-2F05BA79584D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2E780-D969-4563-AE81-DBA6EFF7AFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2E780-D969-4563-AE81-DBA6EFF7AFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2E780-D969-4563-AE81-DBA6EFF7AFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2E780-D969-4563-AE81-DBA6EFF7AFCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9861D39C-5A55-4057-AE65-831E2E1A7BFE}
+		SolutionGuid = {661BCCC1-0860-41F2-88FA-B6953CBBB524}
 	EndGlobalSection
 EndGlobal
