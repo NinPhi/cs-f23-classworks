@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L19_REST_API", "L19_REST_API\L19_REST_API.csproj", "{895D36D5-7FA7-433D-B1A7-D214A69A8AF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{895D36D5-7FA7-433D-B1A7-D214A69A8AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895D36D5-7FA7-433D-B1A7-D214A69A8AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895D36D5-7FA7-433D-B1A7-D214A69A8AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895D36D5-7FA7-433D-B1A7-D214A69A8AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B0EF298-D86D-407F-9D74-7DCA752FA38F}
+	EndGlobalSection
+EndGlobal
