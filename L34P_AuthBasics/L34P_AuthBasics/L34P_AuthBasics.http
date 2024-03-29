@@ -1,0 +1,11 @@
+@HostAddress = https://localhost:7034/api
+
+GET {{HostAddress}}/gold
+Accept: application/json
+Cookie: x
+
+###
+
+GET {{HostAddress}}/auth/login?email=dima@gmail.com&password=123456
+
+###
