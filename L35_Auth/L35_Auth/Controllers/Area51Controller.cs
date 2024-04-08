@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
 namespace L35_Auth.Controllers;
@@ -13,7 +15,7 @@ public class Area51Controller : ControllerBase
     {
         var user = HttpContext.User;
 
-        return Ok(user.FindFirstValue(ClaimTypes.Email));
+        return Ok(user.FindFirstValue(JwtRegisteredClaimNames.Email));
     }
 
     [Authorize(Roles = "Officer, Guard")]

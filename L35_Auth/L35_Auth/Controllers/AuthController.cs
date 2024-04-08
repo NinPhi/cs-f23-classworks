@@ -1,7 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Text;
 
 namespace L35_Auth.Controllers;
 
@@ -27,26 +32,45 @@ public class AuthController : ControllerBase
     {
         if (_email == email && _password == password)
         {
-            await LoginWithHttpContext(email);
+            var token = GetToken(email);
 
-            return NoContent();
+            return Ok(token);
         }
 
         return Unauthorized();
     }
 
-    private Task LoginWithHttpContext(string email)
+    private static string GetToken(string email)
     {
         var claims = new Claim[]
         {
-            new Claim("guid", Guid.NewGuid().ToString()),
-            new Claim(ClaimTypes.Email, email),
-            new Claim(ClaimTypes.Role, "Alien"),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(JwtRegisteredClaimNames.Email, email),
+            new Claim("role", "Alien"),
+            new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString()),
         };
 
-        var identity = new ClaimsIdentity(claims, "Cookies");
-        var principal = new ClaimsPrincipal(identity);
+        var identity = new ClaimsIdentity(claims, JwtBearerDefaults.AuthenticationScheme);
 
-        return HttpContext.SignInAsync(principal);
+        var handler = new JwtSecurityTokenHandler();
+
+        var securityKey = Encoding.UTF8.GetBytes("SUPER SECURE CODe 1337 AZIM JKDLFVJFDILHVNLDFJVN;FDJV;LSJFV;LDJVFDLJV;LFDJB;LVJFL;B JLFJBL;");
+
+        var credentials = new SigningCredentials(
+                    new SymmetricSecurityKey(securityKey),
+                    SecurityAlgorithms.HmacSha256);
+
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            SigningCredentials = credentials,
+            Expires = DateTime.UtcNow.AddMinutes(30),
+            Subject = identity,
+        };
+
+        var token = handler.CreateToken(tokenDescriptor);
+
+        var tokenString = handler.WriteToken(token);
+
+        return tokenString;
     }
 }
