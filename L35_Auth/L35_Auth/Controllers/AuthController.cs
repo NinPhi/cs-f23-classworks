@@ -47,7 +47,6 @@ public class AuthController : ControllerBase
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim(JwtRegisteredClaimNames.Email, email),
             new Claim("role", "Alien"),
-            new Claim(JwtRegisteredClaimNames.Iat, DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString()),
         };
 
         var identity = new ClaimsIdentity(claims, JwtBearerDefaults.AuthenticationScheme);
