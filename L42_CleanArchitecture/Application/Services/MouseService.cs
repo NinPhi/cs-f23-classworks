@@ -1,10 +1,10 @@
 ﻿using Application.Contracts;
-using Application.Interfaces;
 using Domain.Entities;
+using Domain.Repositories;
 
 namespace Application.Services;
 
-public class MouseService(IAppDbContext dbContext)
+public class MouseService(IMouseRepository mouseRepository)
 {
     public async Task AddAsync(AddMouseRequest request)
     {
@@ -15,8 +15,6 @@ public class MouseService(IAppDbContext dbContext)
             Price = request.Price,
         };
 
-        dbContext.Mice.Add(mouse);
-
-        await dbContext.SaveChangesAsync();
+        await mouseRepository.AddAsync(mouse);
     }
 }
