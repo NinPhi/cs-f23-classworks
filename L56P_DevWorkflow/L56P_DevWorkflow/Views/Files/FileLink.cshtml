@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "File link";
+}
+
+@model string
+
+<h3>Your file was successfully uploaded!</h3>
+<h4>Share the link with your friends now.</h4>
+<br />
+<h3>@Model</h3>
+<a class="btn btn-primary" href="@Model">Download</a>

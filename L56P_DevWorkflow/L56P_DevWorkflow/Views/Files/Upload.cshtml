@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Upload page";
+}
+
+@model UploadFileModel
+
+<h1>Specify file to upload to our database.</h1>
+<form enctype="multipart/form-data" asp-controller="Files" asp-action="Upload">
+    <input type="file" value="Choose file..." asp-for="File" />
+    <button class="btn btn-primary" type="submit">Send</button>
+</form>

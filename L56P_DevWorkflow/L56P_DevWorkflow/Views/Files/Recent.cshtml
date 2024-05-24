@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Recent files";
+}
+
+@model List<MyFileModel>
+
+<h3>Files uploaded in 7 days...</h3>
+
+@foreach (var file in Model)
+{
+    <hr />
+    <p>@file.FileName</p>
+    <p>@file.Url</p>
+    <a class="btn btn-primary" asp-action="Download" asp-route-id="@file.Id">Download</a>
+}
