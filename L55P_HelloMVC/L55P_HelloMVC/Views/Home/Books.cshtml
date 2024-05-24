@@ -1,0 +1,12 @@
+﻿@model List<BookViewModel>
+
+@foreach (var book in Model)
+{
+    <div class="mt-2">
+        <label>@book.Title |</label>
+        <label class="ml-1">@book.Author |</label>
+        <label class="ml-1">@book.AvailableCount |</label>
+        <label class="ml-1">@book.Price KGS |</label>
+        <a class="btn btn-secondary ml-1" asp-action="CreateEditBook" asp-route-id="@book.Id">Edit</a>
+    </div>
+}

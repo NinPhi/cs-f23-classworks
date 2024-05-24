@@ -1,0 +1,12 @@
+﻿@using L55_FirstMVC.Models
+
+@model TodoModel
+
+@{
+    Console.WriteLine(Model.Title);
+}
+
+<div>
+    <p>@Model.Title</p>
+    <input type="checkbox" checked="@Model.Complete" />
+</div>

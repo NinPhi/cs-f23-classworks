@@ -1,0 +1,29 @@
+﻿@model BookViewModel
+
+<form asp-action="CreateEditBookForm">
+    <label>Title</label>
+    <input class="form-control"
+           type="text"
+           placeholder="Title"
+           asp-for="Title" />
+
+    <label class="mt-2">Author</label>
+    <input class="form-control"
+           type="text"
+           placeholder="Author"
+           asp-for="Author" />
+
+    <label class="mt-2">Available count</label>
+    <input class="form-control"
+           type="text"
+           placeholder="0"
+           asp-for="AvailableCount" />
+
+    <label class="mt-2">Price in KGS</label>
+    <input class="form-control"
+           type="text"
+           placeholder="0"
+           asp-for="Price" />
+
+    <button class="btn btn-primary mt-2" type="submit">Save</button>
+</form>
